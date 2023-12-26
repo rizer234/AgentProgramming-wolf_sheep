@@ -7,7 +7,7 @@ class Sheep(RandomWalker):
     """
     A sheep that walks around, reproduces (asexually) and gets eaten.
 
-    The init is the same as the RandomWalker.
+    The init is the same as the RandomWalker, but + energy.
     """
 
     energy = None
