@@ -35,3 +35,4 @@ a# Wolf-Sheep Predation Model
 * ``run.py``: 
 اجرای برنامه
 
+## How to use it
