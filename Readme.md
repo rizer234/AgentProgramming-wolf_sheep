@@ -1,18 +1,21 @@
-# Wolf-Sheep Predation Model
+a# Wolf-Sheep Predation Model
 
-## Summary
+## شکار گوسفند و گرگ
 
-A simple ecological model, consisting of three agent types: wolves, sheep, and grass. The wolves and the sheep wander around the grid at random. Wolves and sheep both expend energy moving around, and replenish it by eating. Sheep eat grass, and wolves eat sheep if they end up on the same grid cell.
+ما در اینجا دو نسخه از برنامه داریم:
 
-If wolves and sheep have enough energy, they reproduce, creating a new wolf or sheep (in this simplified model, only one parent is needed for reproduction). The grass on each cell regrows at a constant rate. If any wolves and sheep run out of energy, they die.
+1- نسخه <گرگ و گوسفند>:
+گرگ ها و گوسفندها بطور تصادفی در محیط پرسه میزنند. گرگ ها دنبال گوسفندی برای شکار میگردند. هر قدم برای گرگ ها هزینه دارد. (انرژی میبرد) و آنها باید گوسفند بخورند تا انرژی خود را جبران کنند. وقتی انرژی آنها تمام شد میمیرند.
+برای تداوم جمعیت: هر گرگ یا گوسفند احتمال ثابتی برای تولیدمثل در هر مرحله زمانی دارند.
+در این نسخه چمن را بینهایت مدلسازی میکنیم تا گوسفندان به اندازه کافی چمن برای خوردن داشته باشند.
+عدم محدودیت چمن ها و نوع پیاده سازی موجب میشود گوسفندان با خوردن یا با حرکت کردن انرژی از دست ندهند.
+این تنوع جمعیت در نهایت ناپایدار است.
 
-The model is tests and demonstrates several Mesa concepts and features:
- - MultiGrid
- - Multiple agent types (wolves, sheep, grass)
- - Overlay arbitrary text (wolf's energy) on agent's shapes while drawing on CanvasGrid
- - Agents inheriting a behavior (random movement) from an abstract parent
- - Writing a model composed of multiple files.
- - Dynamically adding and removing agents from the schedule
+2- نسخه <گرگ و گوسفند و چمن>:
+در این مدل عامل چمن را نیز اضافه میکنیم. رفتار گرگ ها مشابه نسخه اول است. اما اینبار گوسفندها نیز باید چمن بخورند تا انرژی خود را حفظ کنند. وقتی انرژِ آنها تمام شود نیز میمیرند.
+سرعت رشد چمن ها نیز ثابت است. این نسخه از مدل اول پیچیده تر است.
+این مدل ها اگرچه فرض میککند که جمعیت ها میتوانند مقدار واقعی بگیرند، اما در مدل های کوچک این مدل ها انقراض را دست کم میگیرند و مدل های مبتنی بر عامل مانند مدل های اینجا نتایج واقعی تری ارائه میدهند.
+
 
 ## Installation
 
