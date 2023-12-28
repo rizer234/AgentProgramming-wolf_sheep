@@ -4,11 +4,6 @@ from .random_walk import RandomWalker
 
 
 class Sheep(RandomWalker):
-    """
-    A sheep that walks around, reproduces (asexually) and gets eaten.
-
-    The init is the same as the RandomWalker, but + energy.
-    """
 
     energy = None
 
@@ -52,10 +47,7 @@ class Sheep(RandomWalker):
 
 
 class Wolf(RandomWalker):
-    """
-    A wolf that walks around, reproduces (asexually) and eats sheep.
-    """
-
+    
     energy = None
 
     def __init__(self, unique_id, pos, model, moore, energy=None):
@@ -94,9 +86,6 @@ class Wolf(RandomWalker):
 
 
 class GrassPatch(mesa.Agent):
-    """
-    A patch of grass that grows at a fixed rate and it is eaten by sheep
-    """
 
     def __init__(self, unique_id, pos, model, fully_grown, countdown):
         """
