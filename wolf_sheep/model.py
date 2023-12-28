@@ -155,3 +155,4 @@ class WolfSheep(mesa.Model):
                 "Final number grass: ",
                 self.schedule.get_type_count(GrassPatch, lambda x: x.fully_grown),
             )
+

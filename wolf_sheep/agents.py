@@ -94,9 +94,6 @@ class Wolf(RandomWalker):
 
 
 class GrassPatch(mesa.Agent):
-    """
-    A patch of grass that grows at a fixed rate and it is eaten by sheep
-    """
 
     def __init__(self, unique_id, pos, model, fully_grown, countdown):
         """
@@ -114,7 +111,6 @@ class GrassPatch(mesa.Agent):
     def step(self):
         if not self.fully_grown:
             if self.countdown <= 0:
-                # Set as fully grown
                 self.fully_grown = True
                 self.countdown = self.model.grass_regrowth_time
             else:
