@@ -49,18 +49,18 @@ chart_element = mesa.visualization.ChartModule(
 
 model_params = {
     # The following line is an example to showcase StaticText.
-    "title": mesa.visualization.StaticText("Parameters:"),
-    "grass": mesa.visualization.Checkbox("Grass Enabled", True),
-    "grass_regrowth_time": mesa.visualization.Slider("Grass Regrowth Time", 20, 1, 50),
+    "title": mesa.visualization.StaticText("مقادیر:"),
+    "grass": mesa.visualization.Checkbox("عامل چمن", True),
+    "grass_regrowth_time": mesa.visualization.Slider("زمان بازتولید چمن", 20, 1, 50),
     "initial_sheep": mesa.visualization.Slider(
-        "Initial Sheep Population", 100, 10, 300
+        "جمعیت اولیه گوسفندان", 100, 10, 300
     ),
     "sheep_reproduce": mesa.visualization.Slider(
-        "Sheep Reproduction Rate", 0.04, 0.01, 1.0, 0.01
+        "نرخ بازتولید گوسفندان", 0.04, 0.01, 1.0, 0.01
     ),
-    "initial_wolves": mesa.visualization.Slider("Initial Wolf Population", 50, 10, 300),
+    "initial_wolves": mesa.visualization.Slider("جمعیت اولیه گرگ‌ها", 50, 10, 300),
     "wolf_reproduce": mesa.visualization.Slider(
-        "Wolf Reproduction Rate",
+        "نرخ بازتولید گرگ‌ها",
         0.05,
         0.01,
         1.0,
@@ -68,12 +68,12 @@ model_params = {
         description="The rate at which wolf agents reproduce.",
     ),
     "wolf_gain_from_food": mesa.visualization.Slider(
-        "Wolf Gain From Food Rate", 20, 1, 50
+        "نرخ سود گرگ از غذا", 20, 1, 50
     ),
-    "sheep_gain_from_food": mesa.visualization.Slider("Sheep Gain From Food", 4, 1, 10),
+    "sheep_gain_from_food": mesa.visualization.Slider("سود گوسفند از غذا", 4, 1, 10),
 }
 
 server = mesa.visualization.ModularServer(
-    WolfSheep, [canvas_element, chart_element], "Wolf Sheep Predation", model_params
+    WolfSheep, [canvas_element, chart_element], "شکار گوسفند و گرگ", model_params
 )
 server.port = 8521
