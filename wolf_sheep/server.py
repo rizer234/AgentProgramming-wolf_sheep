@@ -65,7 +65,7 @@ model_params = {
         0.01,
         1.0,
         0.01,
-        description="The rate at which wolf agents reproduce.",
+        description="نرخی که عوامل گرگ تولیدمثل میکنند.",
     ),
     "wolf_gain_from_food": mesa.visualization.Slider(
         "نرخ سود گرگ از غذا", 20, 1, 50
