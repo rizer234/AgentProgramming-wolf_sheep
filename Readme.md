@@ -1,4 +1,4 @@
-a# Wolf-Sheep Predation Model
+# Wolf-Sheep Predation Model
 
 ## شکار گوسفند و گرگ
 
@@ -26,7 +26,9 @@ a# Wolf-Sheep Predation Model
   اینجا یک تست داریم که مستقل از پیاده سازی server , netlogo برای ما عامل هارا تست میکنند و فضای کار را بطور ascii نشان میدهند.
 * ``wolf_sheep/agents.py``:
   عامل ها در این فایل پیاده سازی شده اند.
+  
 // * ``wolf_sheep/scheduler.py``:
+
   
 * ``wolf_sheep/model.py``:
   مدل شکار را در اینجا پیاده سازی کرده ایم.
