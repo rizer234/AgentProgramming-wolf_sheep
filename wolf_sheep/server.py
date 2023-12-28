@@ -41,9 +41,9 @@ def wolf_sheep_portrayal(agent):
 canvas_element = mesa.visualization.CanvasGrid(wolf_sheep_portrayal, 20, 20, 500, 500)
 chart_element = mesa.visualization.ChartModule(
     [
-        {"Label": "گرگ‌ها", "Color": "#AA0000"},
-        {"Label": "گوسفندان", "Color": "#666666"},
-        {"Label": "چمن", "Color": "#00AA00"},
+        {"Label": "Wolves", "Color": "#AA0000"},
+        {"Label": "Sheep", "Color": "#666666"},
+        {"Label": "Grass", "Color": "#00AA00"},
     ]
 )
 
