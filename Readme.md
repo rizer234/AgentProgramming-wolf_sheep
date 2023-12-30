@@ -42,5 +42,7 @@
 
 ## Resources
 برای نوشتن این برنامه، از منابع و مقالات زیر استفاده کردیم:
+
 https://edutechwiki.unige.ch/en/NetLogo_Wolf_Sheep_Predation_model
+
 https://ccl.northwestern.edu/netlogo/models/WolfSheepPredation
